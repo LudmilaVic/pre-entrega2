@@ -1,0 +1,203 @@
+/*nav*/
+
+#flex-container-nav {
+  display: flex;
+}
+.nav_link {
+  margin: 10px 20px 10px 30px;
+  font-size: 20px;
+}
+
+.nav__color {
+  color: white;
+}
+
+/*inicio*/
+.margen {
+  margin: 80px 20px 20px 20px;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1320px;
+}
+
+body {
+  background-color: rgb(50, 2, 85);
+  background-image: url("../img/background4.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+
+.flex-img {
+  display: flex;
+}
+
+.margen-p1 {
+  margin: 200px 0px 30px 10px;
+  padding: 30px;
+  border-style: solid;
+}
+
+.margen-p {
+  margin: 30px 20px 10px 20px;
+  padding: 30px;
+  border-style: solid;
+}
+
+.img {
+  max-width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.img img {
+  margin-top: 1rem;
+}
+.img {
+  animation: from-right 1.5s ease;
+}
+
+@keyframes from-right {
+  0% {
+    opacity: 0;
+    transform: translatex(80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translatex(0px);
+  }
+}
+
+/*footer*/
+
+.flex-container {
+  display: flex;
+  min-height: 100px;
+}
+
+.img_footer {
+  height: 80px;
+  width: 80px;
+}
+
+/*productos*/
+
+@media (max-width: 768px) {
+  .imgp {
+    width: 100%;
+  }
+}
+
+.flex-container1 {
+  display: flex;
+}
+
+.imgp {
+  animation: from-right 1.5s ease;
+}
+
+button {
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.button {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+/*PRUEBA*/
+
+.button:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.button:active {
+  color: #000;
+}
+
+.button:active:after {
+  background: transparent;
+}
+
+.button:before {
+  opacity: 1;
+}
+
+.button:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.margen-item-1 {
+  margin: 30px 30px 30px 10px;
+}
+
+.margen-item-2 {
+  margin: 30px 30px 30px 20px;
+}
+
+.margen-item-3 {
+  margin: 30px 30px 30px 20px;
+}
+
+/*ofertas*/
