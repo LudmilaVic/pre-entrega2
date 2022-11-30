@@ -88,6 +88,12 @@ body {
 
 /*productos*/
 
+.container-p {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1320px;
+}
+
 @media (max-width: 768px) {
   .imgp {
     width: 100%;
@@ -95,9 +101,28 @@ body {
 }
 
 @media (min-width: 768px) {
-  .container {
+  .container-p {
     width: 80%;
   }
+
+  .flex-container-nav {
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: auto;
+  }
+
+  .nav_color {
+    display: flex;
+    margin: 10px 20pc 10px 30px;
+  }
+
+  .margen-item-3 {
+    visibility: visible;
+    flex-direction: column;
+  }
+}
 
 .flex-container1 {
   display: flex;
