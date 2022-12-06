@@ -14,7 +14,6 @@
 
 /*inicio*/
 .margen {
-  margin: 80px 20px 20px 20px;
   color: white;
   font-family: "Times New Roman", Times, serif;
   font-size: 30px;
@@ -24,6 +23,7 @@
   width: 100%;
   margin: 0 auto;
   max-width: 1320px;
+  padding: 40px;
 }
 
 body {
@@ -34,19 +34,23 @@ body {
   color: white;
 }
 
+.titulo {
+  padding: 40px;
+}
+
 .flex-img {
   display: flex;
 }
 
 .margen-p1 {
   margin: 200px 0px 30px 10px;
-  padding: 30px;
+  padding: 40px;
   border-style: solid;
 }
 
 .margen-p {
   margin: 30px 20px 10px 20px;
-  padding: 30px;
+  padding: 40px;
   border-style: solid;
 }
 
@@ -94,15 +98,16 @@ body {
   max-width: 1320px;
 }
 
-@media (max-width: 768px) {
-  .imgp {
-    width: 100%;
-  }
-}
+/*media*/
 
-@media (min-width: 768px) {
-  .container-p {
+@media (max-width: 768px) {
+  .container {
     width: 80%;
+  }
+
+  .body {
+    background-image: none;
+    background-color: rgb(50, 2, 85);
   }
 
   .flex-container-nav {
@@ -118,9 +123,24 @@ body {
     margin: 10px 20pc 10px 30px;
   }
 
-  .margen-item-3 {
-    visibility: visible;
+  .titulo {
+    font-size: 20px;
+  }
+
+  .img {
+    margin-top: 0;
+    text-align: center;
+    max-width: 25%;
+  }
+}
+
+@media (max-width: 768px) {
+  .flex-container1 {
     flex-direction: column;
+  }
+  .imgp {
+    padding: 40px;
+    align-items: center;
   }
 }
 
