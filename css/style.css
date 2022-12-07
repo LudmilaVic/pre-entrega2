@@ -67,6 +67,18 @@ body {
   animation: from-right 1.5s ease;
 }
 
+.subtitulo {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
+  text-align: center;
+}
+
+.parrafo {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+  text-align: center;
+}
+
 @keyframes from-right {
   0% {
     opacity: 0;
@@ -110,27 +122,28 @@ body {
     background-color: rgb(50, 2, 85);
   }
 
-  .flex-container-nav {
+  .nav {
     visibility: visible;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     height: auto;
+    flex-direction: column-reverse;
   }
 
-  .nav_color {
-    display: flex;
-    margin: 10px 20pc 10px 30px;
+  .nav__color {
+    font-size: 15px;
   }
 
   .titulo {
     font-size: 20px;
   }
 
-  .img {
+  .img2 {
     margin-top: 0;
     text-align: center;
-    max-width: 25%;
+    height: 99%;
+    width: 99%;
   }
 }
 
@@ -141,6 +154,9 @@ body {
   .imgp {
     padding: 40px;
     align-items: center;
+
+    width: 80%;
+    height: 80%;
   }
 }
 
